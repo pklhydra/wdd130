@@ -7,16 +7,28 @@ nav {
     display: flex;
     flex-direction: column;
     background-color: rgb(0, 13, 255);
+    padding: 10px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 10px;
 }
 
 main {
     max-width: 840px;
+}
+
+main img {
+    width: 150px;
+    height: auto;
+    border:2px solid grey;
+    padding: 5px;
+    box-shadow: 0 4px 10px #00000033;
+}
+
+h1 {
+    color: black;
 }
 
 aside {
@@ -34,18 +46,13 @@ aside img {
     height: auto;
 }
 
-main img {
-    width: 150px;
-    height: auto;
-}
-
 p {
     padding: 0;
     margin: 0;
 }
 
 footer {
-    margin: 0;
+    border-top: 20px;
     margin-top: 572px;
     background-color: #999;
     text-align: center;
