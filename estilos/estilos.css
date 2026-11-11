@@ -11,8 +11,11 @@ nav {
 }
 
 nav a {
+    display: block;
+    padding: 5px;
     color: white;
     text-decoration: none;
+
 }
 
 main {
