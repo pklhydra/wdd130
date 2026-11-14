@@ -1,5 +1,7 @@
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
 
@@ -22,6 +24,7 @@ main {
 }
 
 main img {
+    float: right;
     width: 150px;
     height: auto;
     border:2px solid grey;
@@ -33,14 +36,23 @@ h1 {
     color: black;
 }
 
+
+
 aside {
-    width: 20rem;
+    position: relative;
+    width: 20em;
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 0.2 );
     padding: 1rem;
     background-color: #eee;
     color: #333;
     text-align: center;
+}
+
+aside h2 {
+    position: absolute;
+    top: 20px;
+    left: 125px;
 }
 
 aside img {
@@ -58,4 +70,14 @@ footer {
     margin-top: 572px;
     background-color: #999;
     text-align: center;
+}
+
+/* Seletores de Classe */
+
+.caixa {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
 }
