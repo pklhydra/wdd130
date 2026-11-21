@@ -1,11 +1,10 @@
 :root {
     --cor-primaria: #007791;
-    --cor-secundaria: #f46b27;
     --cor-destaque1: #162e4d;
-    --cor-destaque2: #e0f2f7;
     --cor-texto1: #ffffff;
     --cor-texto2: #102a43;
     --cor-nav: #48cae4;
+    --cor-border: black;
     --fonte-titulo: "Times New Roman", "Georgia", serif;
     --fonte-body: Arial, Helvetica, sans-serif;
 }
@@ -14,11 +13,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--fonte-body);
 }
 
 body {
     font-family: var(--fonte-body);
-    color: var(--cor-destaque1);
 }
 
 header, main, footer {
@@ -73,7 +72,7 @@ nav, p, section, article {
 .hero {
     position: relative;
     width: 100%;
-    border: solid 2px black;
+    border: solid 2px var(--cor-border);
 }
 
 .hero h1 {
@@ -110,7 +109,7 @@ nav, p, section, article {
 .history {
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
-    border: solid 1px black;
+    border: solid 1px var(--cor-border);
     margin: 20px 0;
 }
 
@@ -132,8 +131,9 @@ nav, p, section, article {
 .aventuras {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    border: solid 1px black;
+    border: solid 1px var(--cor-border);
     margin: 0 0 20px 0;
+    text-align: center;
 }
 
 .aventuras h2 {
@@ -145,12 +145,21 @@ nav, p, section, article {
     place-self: center;
 }
 
+.aventuras figure img {
+    width: 100px;
+}
+
+.aventuras figcaption {
+    margin: 5px;
+}
+
 footer {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     background-color: var(--cor-destaque1);
     color: var(--cor-texto1);
     padding: 20px;
+    border: solid 1px var(--cor-border);
 }
 
 footer p {
