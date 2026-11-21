@@ -3,7 +3,6 @@
     --cor-destaque1: #162e4d;
     --cor-texto1: #ffffff;
     --cor-texto2: #102a43;
-    --cor-nav: #48cae4;
     --cor-border: black;
     --fonte-titulo: "Times New Roman", "Georgia", serif;
     --fonte-body: Arial, Helvetica, sans-serif;
@@ -46,8 +45,7 @@ header nav {
 header nav a {
     text-decoration: none;
     margin: 10px;
-    color: var(--cor-texto2);
-    background-color: var(--cor-nav);
+    color: var(--cor-texto1);
     padding: 5px;
     border-radius: 5px;
     font-weight: 600;
