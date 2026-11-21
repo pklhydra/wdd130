@@ -2,7 +2,6 @@
     --cor-primaria: #007791;
     --cor-destaque1: #162e4d;
     --cor-texto1: #ffffff;
-    --cor-texto2: #102a43;
     --cor-border: black;
     --fonte-titulo: "Times New Roman", "Georgia", serif;
     --fonte-body: Arial, Helvetica, sans-serif;
@@ -17,6 +16,10 @@
 
 body {
     font-family: var(--fonte-body);
+}
+
+h1, h2 {
+        font-family: var(--fonte-titulo);
 }
 
 header, main, footer {
@@ -56,7 +59,7 @@ header a:hover {
     transform: translateY(-10px);
 }
 
-h1, h2 {
+section h1, h2 {
     font-family: var(--fonte-titulo);
     color: var(--cor-primaria);
     text-align: center;
