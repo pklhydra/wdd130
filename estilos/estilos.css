@@ -5,19 +5,37 @@
     font-family: "Roboto", sans-serif;
 }
 
+header, footer, .grid {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
 nav {
     display: flex;
-    flex-direction: column;
+    justify-content:  space-evenly;
+    align-items: center;
     background-color: rgb(0, 13, 255);
     padding: 10px;
 }
 
 nav a {
     display: block;
-    padding: 5px;
+    padding: 0.5rem;
     color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
     text-decoration: none;
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+main {
+    grid-column: 2;
+}
+
 
 main {
     max-width: 840px;
@@ -34,11 +52,14 @@ main img {
 
 h1 {
     color: black;
+    border-bottom: solid 1.5px;
 }
 
 
 
 aside {
+    grid-column: 1;
+    grid-row: 1;
     position: relative;
     width: 20em;
     margin: 1rem;
