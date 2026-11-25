@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+}
+
+form {
+    width: 600px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #dadada;
+}
+
+form label {
+    width: 500px;
+}
+
+input, textarea, select, button {
+    width: 500px;
+    margin: 15px;
+    padding: 5px 0;
+}
+
+button {
+    background-color: blue;
+    color: white;
+}
